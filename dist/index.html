@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+  </head>
+
+  <body class="bg-black text-white">
+    <nav class="bg-[#0f070728] px-4 py-3">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <div class="text-4xl font-bold text-green-800">Rosalin</div>
+
+        
+        <div class="hidden md:flex space-x-6">
+          <a href="" class="hover:text-green-400">Home</a>
+          <a href="" class="hover:text-green-400">About me</a>
+          <a href="" class="hover:text-green-400">Skills</a>
+          <a href="" class="hover:text-green-400">Contact me</a>
+        </div>
+
+        
+        <div class="md:hidden">
+          <button id="menu-btn" class="focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      
+      <div id="mobile-menu" class="md:hidden hidden px-4 mt-2 space-y-2">
+        <a href="" class="block hover:text-blue-400">Home</a>
+        <a href="" class="block hover:text-blue-400">About me</a>
+        <a href="" class="block hover:text-blue-400">Skills</a>
+        <a href="" class="block hover:text-blue-400">Contact</a>
+      </div>
+    </nav>
+
+   
+    <section class="min-h-screen px-6 py-12 flex flex-col md:flex-row items-center justify-center gap-10">
+      <div class="w-40 h-40 md:w-60 md:h-60 rounded-full ring-4 ring-green-500 shadow-lg overflow-hidden">
+        <img src="mypic.jpg" alt="Rosalin" class="w-full h-full object-cover" />
+      </div>
+
+      <div class="max-w-xl text-center md:text-left">
+        <h2 class="text-3xl font-bold mb-2">
+          Hello! I'm <span class="text-green-400">Rosalin Nayak</span>
+        </h2>
+        <p class="text-lg text-green-400 mb-4">
+          <span id="auto-type">Web Developer</span>
+        </p>
+        <p class="text-sm text-gray-400 mb-6">
+          I'm a passionate developer exploring web development and building
+          user-friendly interfaces with HTML, CSS, and JavaScript.
+        </p>
+        <button class="px-6 py-3 rounded-xl text-white font-semibold backdrop-blur-md bg-white/10 border border-white/30 shadow-lg
+  hover:bg-green-500/30 hover:shadow-[0_0_15px_5px_rgba(34,197,94,0.6)]
+  transition-all duration-300 ease-in-out">
+   My Resume
+</button><br><br>
+
+        <div
+          class="flex justify-center md:justify-start gap-6 text-green-400 text-2xl"
+        >
+          <a
+            href="https://www.linkedin.com/in/rosalin-nayak-4a6938333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            target="_blank"
+            class="hover:text-white transition"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/Rosalin-nayak"
+            target="_blank"
+            class="hover:text-white transition"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="mailto:rosalinnayak063@gmail.com"
+            target="_blank"
+            class="hover:text-white transition"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+     
+  <div class="text-center py-10">
+    <h2 class="text-4xl font-bold text-green-400 mb-2">My Skills</h2>
+    <p class="text-gray-400 text-lg">Technologies I’ve been working with recently</p>
+  </div>
+
+    <section class="max-w-2xl mx-auto px-4 grid grid-cols-2 gap-8 py-10">
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">HTML</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">CSS</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">JavaScript</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">Node.js</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">Git & GitHub</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">C/C++</h3>
+    </div>
+    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+      <h3 class="text-xl font-semibold">DSA (Basics)</h3>
+    </div>
+  </section>
+
+  <div class="text-center py-10">
+    <h2 class="text-4xl font-bold text-green-400 mb-2">My Projects</h2>
+    <p class="text-gray-400 text-lg">Projects I’ve been worked with till now</p>
+  </div>
+
+  <div class="grid gap-6 mt-10 m-10">
+  <div class="bg-green-800 p-6 rounded-xl">
+    <h3 class="text-xl font-semibold text-white">Zairzest Website clone</h3>
+    <p class="text-gray-300">Built using HTML,CSS JavaScript.</p>
+    <a href="#" class="text-blue-400 underline">View Project</a>
+  </div>
+
+   <div class="bg-green-800 p-6 rounded-xl">
+    <h3 class="text-xl font-semibold text-white">Weather Web App</h3>
+    <p class="text-gray-300">Built using Node.js and a weather API.</p>
+    <a href="https://github.com/Rosalin-nayak/weather-server" class="text-blue-400 underline">View Project</a>
+  </div>
+  
+</div>
+
+
+ <footer class="text-center text-sm text-gray-500 py-6">
+    © 2025 Rosalin Nayak • All rights reserved
+  </footer>
+
+
+    <script>
+      new TypeIt("#auto-type", {
+        strings: ["Software Developer", "Tech Enthusiast"],
+        speed: 100,
+        breakLines: false,
+        loop: true,
+        deleteSpeed: 60,
+      }).go();
+    </script>
+  </body>
+</html>
