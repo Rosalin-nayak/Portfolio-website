@@ -12,7 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/typeit@8.7.1/dist/index.umd.js"></script>
+    <style>
+      .glass{
+         background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    </style>
   </head>
 
   <body class="bg-black text-white">
@@ -20,15 +29,19 @@
       <div class="max-w-7xl mx-auto flex items-center justify-between">
         <div class="text-4xl font-bold text-green-800">Rosalin</div>
 
-        
         <div class="hidden md:flex space-x-6">
-          <a href="" class="hover:text-green-400">Home</a>
-          <a href="" class="hover:text-green-400">About me</a>
-          <a href="" class="hover:text-green-400">Skills</a>
-          <a href="" class="hover:text-green-400">Contact me</a>
+          <a href="#home" class="hover:text-green-400">Home</a>
+          <a href="#skills" class="hover:text-green-400">Skills</a>
+          <a href="#projects" class="hover:text-green-400">Projects</a>
+          <a href="#contact" class="hover:text-green-400">Contact me</a>
+          <button id="themeToggle">🌗</button></i></h1>
+          <!-- <button
+      class="bg-gray-800 text-white dark:bg-yellow-400 dark:text-black px-6 py-2 rounded-full text-lg transition-all duration-300 shadow"
+    >
+      Toggle Theme
+    </button> -->
         </div>
 
-        
         <div class="md:hidden">
           <button id="menu-btn" class="focus:outline-none">
             <svg
@@ -49,18 +62,20 @@
         </div>
       </div>
 
-      
       <div id="mobile-menu" class="md:hidden hidden px-4 mt-2 space-y-2">
-        <a href="" class="block hover:text-blue-400">Home</a>
-        <a href="" class="block hover:text-blue-400">About me</a>
-        <a href="" class="block hover:text-blue-400">Skills</a>
-        <a href="" class="block hover:text-blue-400">Contact</a>
+        <a href="#home" class="block hover:text-blue-400">Home</a>
+        <a href="#skills" class="block hover:text-blue-400">Skills</a>
+        <a href="#projects" class="block hover:text-blue-400">Projects</a>
+        <a href="#contact" class="block hover:text-blue-400">Contact</a>
       </div>
     </nav>
 
-   
-    <section class="min-h-screen px-6 py-12 flex flex-col md:flex-row items-center justify-center gap-10">
-      <div class="w-40 h-40 md:w-60 md:h-60 rounded-full ring-4 ring-green-500 shadow-lg overflow-hidden">
+    <section
+      class="min-h-screen px-6 py-12 flex flex-col md:flex-row items-center justify-center gap-10"
+    >
+      <div
+        class="w-40 h-40 md:w-60 md:h-60 rounded-full ring-4 ring-green-500 shadow-lg overflow-hidden"
+      >
         <img src="mypic.jpg" alt="Rosalin" class="w-full h-full object-cover" />
       </div>
 
@@ -75,11 +90,11 @@
           I'm a passionate developer exploring web development and building
           user-friendly interfaces with HTML, CSS, and JavaScript.
         </p>
-        <button class="px-6 py-3 rounded-xl text-white font-semibold backdrop-blur-md bg-white/10 border border-white/30 shadow-lg
-  hover:bg-green-500/30 hover:shadow-[0_0_15px_5px_rgba(34,197,94,0.6)]
-  transition-all duration-300 ease-in-out">
-   My Resume
-</button><br><br>
+        <button
+          class="text-green-500 px-6 py-3 rounded-xl font-semibold backdrop-blur-md bg-white/10 border border-white/30 shadow-lg hover:bg-green-500/30 hover:shadow-[0_0_15px_5px_rgba(34,197,94,0.6)] transition-all duration-300 ease-in-out"
+        >
+          My Resume</button
+        ><br /><br />
 
         <div
           class="flex justify-center md:justify-start gap-6 text-green-400 text-2xl"
@@ -106,65 +121,125 @@
       </div>
     </section>
 
-     
-  <div class="text-center py-10">
-    <h2 class="text-4xl font-bold text-green-400 mb-2">My Skills</h2>
-    <p class="text-gray-400 text-lg">Technologies I’ve been working with recently</p>
-  </div>
+    <div class="text-center py-10">
+      <h2 class="text-4xl font-bold text-green-400 mb-2">My Skills</h2>
+      <p class="text-gray-400 text-lg">
+        Technologies I’ve been working with recently
+      </p>
+    </div>
 
-    <section class="max-w-2xl mx-auto px-4 grid grid-cols-2 gap-8 py-10">
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">HTML</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">CSS</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">JavaScript</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">Tailwind CSS</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">Node.js</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">Git & GitHub</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">C/C++</h3>
-    </div>
-    <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
-      <h3 class="text-xl font-semibold">DSA (Basics)</h3>
-    </div>
-  </section>
+    <section id="skills" class="max-w-2xl mx-auto px-4 grid grid-cols-2 gap-8 py-10">
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">HTML</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">CSS</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">JavaScript</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">Tailwind CSS</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">Node.js</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">Git & GitHub</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">C/C++</h3>
+      </div>
+      <div class="bg-green-800 rounded-xl p-6 text-center shadow-lg transition">
+        <h3 class="text-xl font-semibold">DSA (Basics)</h3>
+      </div>
+    </section>
 
-  <div class="text-center py-10">
-    <h2 class="text-4xl font-bold text-green-400 mb-2">My Projects</h2>
-    <p class="text-gray-400 text-lg">Projects I’ve been worked with till now</p>
-  </div>
 
-  <div class="grid gap-6 mt-10 m-10">
-  <div class="bg-green-800 p-6 rounded-xl">
-    <h3 class="text-xl font-semibold text-white">Zairzest Website clone</h3>
-    <p class="text-gray-300">Built using HTML,CSS JavaScript.</p>
-    <a href="#" class="text-blue-400 underline">View Project</a>
-  </div>
+    <section id="projects" class=" text-white">
+      <h2 class="text-4xl text-green-400 font-bold text-center mb-12">My Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
 
-   <div class="bg-green-800 p-6 rounded-xl">
-    <h3 class="text-xl font-semibold text-white">Weather Web App</h3>
-    <p class="text-gray-300">Built using Node.js and a weather API.</p>
-    <a href="https://github.com/Rosalin-nayak/weather-server" class="text-blue-400 underline">View Project</a>
-  </div>
+        <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-lg hover:shadow-green-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">Zairzest website clone</h3>
+          <p class="text-gray-300 mb-4">A responsive website made using HTML,CSS,JavaScript</p>
+          <a href="#" target="_blank" class="text-green-400 font-medium hover:underline">View Project</a>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-lg hover:shadow-green-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">Weather Web Server</h3>
+          <p class="text-gray-300 mb-4">Weather forecast app using Node.js and OpenWeatherMap API</p>
+          <a href="#" target="_blank" class="text-green-400 font-medium hover:underline">View Project</a>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-lg hover:shadow-green-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">To-do list</h3>
+          <p class="text-gray-300 mb-4">task manager with html,css,javascript node.js and expressjs</p>
+          <a href="#" target="_blank" class="text-green-400 font-medium hover:underline">View Project</a>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-lg hover:shadow-green-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">Number-guessing game</h3>
+          <p class="text-gray-300 mb-4">made using baic html,css and javascript concepts</p>
+          <a href="#" target="_blank" class="text-green-400 font-medium hover:underline">View Project</a>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-lg hover:shadow-green-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">Zairzest website clone</h3>
+          <p class="text-gray-300 mb-4">A responsive website made using HTML,CSS,JavaScript</p>
+          <a href="#" target="_blank" class="text-green-400 font-medium hover:underline">View Project</a>
+        </div>
+
+        <div class="bg-gray-800 bg-opacity-80 rounded-2xl p-6 shadow-lg hover:shadow-green-500/50 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="text-2xl font-semibold mb-2">Zairzest website clone</h3>
+          <p class="text-gray-300 mb-4">A responsive website made using HTML,CSS,JavaScript</p>
+          <a href="#" target="_blank" class="text-green-400 font-medium hover:underline">View Project</a>
+        </div>
+
+      </div>
+    </section>
   
-</div>
+
+  <section id="contact" class="min-h-screen flex items-center justify-center px-4 py-10 text-white">
+   <div class="glass w-full max-w-4xl p-8 rounded-2xl shadow-xl">
+    <h2 class="text-4xl font-bold text-green-400 text-center mb-6">Contact Me</h2>
+
+    <form id="contactform" class="space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label  class="block text-sm font-medium mb-2" for="name">Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 rounded-lg bg-black bg-opacity-40 border border-green-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Your Name" />
+        </div>
+        <div>
+          <label class="block text-sm font-medium mb-2" for="email">Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 rounded-lg bg-black bg-opacity-40 border border-green-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Your Email" />
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium mb-2" for="message">Message</label>
+        <textarea id="message" rows="5" class="w-full px-4 py-2 rounded-lg bg-black bg-opacity-40 border border-green-500 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-green-400" placeholder="Your Message"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="mt-4 bg-green-500 hover:bg-green-600 text-black font-semibold py-2 px-6 rounded-full transition duration-300 shadow-md">
+          Send Message
+        </button>
+      </div>
+    </form>
+  </div>
+    </section>
 
 
- <footer class="text-center text-sm text-gray-500 py-6">
-    © 2025 Rosalin Nayak • All rights reserved
-  </footer>
+    <button id="scrollBtn" onclick="scrollToTop()" title="Scroll to Top" class=" hidden fixed bottom-6 right-6 bg-green-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg text-xl transition duration-300 z-1000">
+    ↑
+  </button>
 
+    <footer class="text-center text-sm text-gray-500 py-6">
+      © 2025 Rosalin Nayak • All rights reserved
+    </footer>
 
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
       new TypeIt("#auto-type", {
         strings: ["Software Developer", "Tech Enthusiast"],
@@ -173,6 +248,68 @@
         loop: true,
         deleteSpeed: 60,
       }).go();
+
+
+      const scrollBtn=document.getElementById("scrollBtn");
+      window.addEventListener("scroll",()=>{
+        if(window.scrollY>100){
+          scrollBtn.classList.remove("hidden");
+        }else{
+          scrollBtn.classList.add("hidden");
+        }
+      });
+      function scrollToTop(){
+        window.scrollTo({top:0,behaviour:"smooth"});
+      }
+
+
+
+    const toggleButton = document.getElementById("themeToggle");
+    const htmlEl = document.documentElement;
+
+    
+    if (localStorage.getItem("theme") === "dark") {
+      htmlEl.classList.add("dark");
+      document.body.classList.remove("bg-white", "text-black");
+      document.body.classList.add("bg-black", "text-white");
+    }
+
+    toggleButton.addEventListener("click", () => {
+      htmlEl.classList.toggle("dark");
+
+      if (htmlEl.classList.contains("dark")) {
+        document.body.classList.remove("bg-white", "text-black");
+        document.body.classList.add("bg-black", "text-white");
+        localStorage.setItem("theme", "dark");
+      } else {
+        document.body.classList.remove("bg-black", "text-white");
+        document.body.classList.add("bg-white", "text-black");
+        localStorage.setItem("theme", "light");
+      }
+    });
+
+    const form=document.getElementById('contactform');
+    form.addEventListener('submit',function(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const message=document.getElementById('message').value.trim();
+
+      if(name===''||email===''||message===''){
+        alert('Please fill in all the fields');
+        return;
+      }
+
+      alert(`Thank you,${name}! Your message has been submitted.`);
+      form.reset()
+    })
+
+   
+  AOS.init({        
+    duration: 800,      
+    easing: 'ease-in-out'
+  });
+
     </script>
   </body>
 </html>
